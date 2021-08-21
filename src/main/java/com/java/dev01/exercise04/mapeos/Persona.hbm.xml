@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.java.dev01.exercise04.pojos">
+    <class name="Persona" table="public.personas">
+        <id name="id" column="pers_id" type="int">
+            <generator class="increment"/>
+        </id>
+
+        <property name="paternal" column="pers_paternal" type="string"/>
+        <property name="maternal" column="pers_maternal" type="string"/>
+        <property name="name" column="pers_name" type="string"/>
+    </class>
+</hibernate-mapping>
